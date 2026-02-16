@@ -61,7 +61,7 @@ main h1{
     font-weight:700;
     letter-spacing: 5px;
     line-height:1;
-    background-image: linear-gradient(rgb(119, 112, 253),rgb(206, 190, 228));
+    background-image: linear-gradient(rgb(51, 123, 255),rgb(140, 156, 230));
     color: transparent;
     background-clip: text;
     max-width: 1400px;
@@ -74,7 +74,7 @@ main h2{
     font-weight:700px;
     letter-spacing: 5px;
     line-height:1;
-    background-image: linear-gradient(rgb(119, 112, 253),rgb(206, 190, 228));
+    background-image: linear-gradient(rgb(51, 123, 255),rgb(140, 156, 230));
     color:transparent;
     background-clip: text;
     display: none;
@@ -88,7 +88,7 @@ main h2{
 }
 
 .location p{
-    background-image: linear-gradient(to right, rgb(119, 112, 253),rgb(206, 190, 228),rgb(119, 112, 253));
+    background-image: linear-gradient(to right, rgb(51, 123, 255),rgb(140, 156, 230),rgb(51, 123, 255));
     color:transparent;
     background-clip: text;
     font-size: 1.5rem;
@@ -171,7 +171,7 @@ main h2{
 .about-title{
     margin-bottom:5%;
     font-size: 5rem;
-    background-image: linear-gradient(rgb(129, 111, 212),rgb(215,215, 190));
+    background-image: linear-gradient(rgb(51, 123, 255),rgb(140, 156, 230));
     color: transparent;
     background-clip: text;
 }
@@ -234,7 +234,7 @@ main h2{
 }
 
 .card-text{
-    color: #56585c;
+    color: #95959e;
     line-height: 1.6;
     margin-top: 2rem;
     max-width: 30rem;
@@ -248,6 +248,48 @@ main h2{
     object-fit: cover;
     z-index: -1;
 }
+
+.model-box{
+    position: absolute;
+    right : 5%;
+    top: -25%;
+    width: 30rem;
+    height: 30rem;
+}
+
+.info-3D{
+    width: 150%;
+    height: 150%;
+    mix-blend-mode: lighten;
+}
+
+.bento-grid .skills-group{
+    position:absolute;
+    bottom: 5%;
+    left: 15%;
+    width:70%;
+}
+
+.bento-grid .btn{
+    position: absolute;
+    bottom: 10%;
+    padding: 0.9rem 1.6rem;
+    font-size: 0.95rem;
+    background-color: rgba(124,233,230,0.1);
+    color:rgb(127, 168, 255);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+.bento-grid .btn:hover{
+    background-color: rgba(96, 170, 255, 0.897);
+    color: black;
+}
+
+
+
 
 
 
