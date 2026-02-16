@@ -158,9 +158,10 @@ main h2{
 }
 
 .about-section{
-    height:95vh;
+    /* height:95vh; */
     width:100%;
     margin-top:20rem;
+    padding-bottom: 6rem;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +213,7 @@ main h2{
 }
 
 .card::before{
-    content: "";
+    content:'';
     position: absolute;
     inset: 0 0 0 0;
     background: radial-gradient(circle at var(--x) var(--y), rgba(124, 233, 230, 0.1), transparent 40%);
@@ -224,6 +225,31 @@ main h2{
 .card:hover::before{
     opacity: 1;
 }
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 4rem;
+    color: white;
+}
+
+.card-text{
+    color: #56585c;
+    line-height: 1.6;
+    margin-top: 2rem;
+    max-width: 30rem;
+}
+
+.bento-grid .background-img{
+    position: absolute;
+    inset: -1% -1% -1% -1%;
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
 
 
 
