@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Madhumitha PortFolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header>
@@ -15,29 +18,42 @@
         <button class="contact-btn">Contact</button>
     </header>
     <main>
-        <div class="title-section">
+        <div class="title-section" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <h1>SOFTWARE DEVELOPER</h1>
-            <h2>WEB DEV</h2>
+            <h2>SOF DEV</h2>
             <div class="location">
                 <p>BASED<br>In<br>INDIA</p>
             </div>
             
         </div>
-        <div class="bio-section">
+        <div class="bio-section" data-aos="fade-up"
+     data-aos-duration="1500">
             
             <p class="bio">
                 <span style="color:rgb(231, 139, 158)">Computer Science Engineer </span>passionate about full-stack development, machine learning, and creating modern, user-focused web applications. Driven to build innovative technology solutions that solve real-world problems and continuously explore new tools and technologies.
             </p>
         </div>
 
-        <div class="scroll-down"></div>
-        <spline-viewer class="planet-3D" url="https://prod.spline.design/MQblTdpKZUAwPpC8/scene.splinecode"></spline-viewer>
+        <div class="scroll-down" data-aos="fade-up"
+     data-aos-duration="1500"></div>
+        <spline-viewer data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0" 
+     data-aos-duration="3000"
+     class="planet-3D" url="https://prod.spline.design/MQblTdpKZUAwPpC8/scene.splinecode"></spline-viewer>
     </main>
 
     <section class="about-section">
-        <h1 class="about-title">About Me</h1>
+        <h1 class="about-title" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">About Me</h1>
         <div class="bento-grid">
-            <div class="card intro">
+            <div class="card intro" data-aos="fade-right"
+                                   data-aos-offset="300"
+                                   data-aos-easing="ease-in-sine" data-aos-duration="1500">
                 <h2 class="card-title">HI THERE, I'M MADHUMITHA</h2>
                 <p class="card-text">
                     I’m a Computer Science Engineer who loves turning ideas into interactive and visually appealing web experiences. I enjoy building modern, responsive websites and applications that focus on performance, usability, and clean design. My passion lies in combining creativity with technology to create meaningful digital solutions.
@@ -49,7 +65,9 @@ I’m always exploring new tools, improving my skills, and challenging myself wi
                     <spline-viewer class="info-3D" url="https://prod.spline.design/TBc9oYFSefLBZtsb/scene.splinecode"></spline-viewer>
                 </div>
             </div>
-            <div class="card tech">
+            <div class="card tech" data-aos="fade-left"
+                                   data-aos-offset="300"
+                                   data-aos-easing="ease-in-sine" data-aos-duration="1500">
                 <h2 class="card-title">TECH STACK</h2>
                 <P class="card-text">
                     Languages: JavaScript, Python, Java, C++<br>
@@ -67,8 +85,9 @@ I’m always exploring new tools, improving my skills, and challenging myself wi
                 <img src="assests/gradient2.png" alt="" class="background-img">
                 <img src="assests/skills group.png" alt="" class="skills-group">
             </div>
-            <div class="card time">
-                <h2 class="card-title">GLOBALLY fLEXIBLE</h2>
+            <div class="card time" data-aos="fade-up"
+     data-aos-duration="1500">
+                <h2 class="card-title">GLOBALLY FLEXIBLE</h2>
                 <P class="card-text">
                   Remote-ready with clear communication and collaborative workflow.
                 </P>
@@ -76,7 +95,8 @@ I’m always exploring new tools, improving my skills, and challenging myself wi
                 <button class="btn"><i class="bx bx-send-alt-2 bx-remove-padding"></i> CONTACT ME </button>
 
             </div>
-            <div class="card passion">
+            <div class="card passion" data-aos="fade-up"
+     data-aos-duration="1500">
                 <h2 class="card-title">PASSION FOR CODING</h2>
                 <p class="card-text">
                     Enjoy tackling challenging problems involving data structures and algorithms.<br>
@@ -86,10 +106,111 @@ I’m always exploring new tools, improving my skills, and challenging myself wi
             </div>
         </div>
     </section>
+
+    <section>
+
+    </section>
+    <section class="projects-section">
+        <h3 data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">My Projects</h3>
+        <div class="slider" style="
+            --width: 60rem;
+            --height: 40rem;
+            --quantity: 4;
+        ">
+        <div class="list">
+            <div class="item" style="--position:1"><video id="projectVideo1" loop playsinline src="assests/video/project-1.mp4"></video></div>
+            <div class="item" style="--position:2"><video id="projectVideo2" loop playsinline src="assests/video/project-2.mp4"></video></div>
+            <div class="item" style="--position:3"><video id="projectVideo3" loop playsinline src="assests/video/project-3.mp4"></video></div>
+            <div class="item" style="--position:4"><video id="projectVideo4" loop playsinline src="assests/video/project-4.mp4"></video></div>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="section-header" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+            <h3>Get In Touch</h3>
+            <p>
+            Open to internships and full-time opportunities. Let’s connect and create impactful digital experiences.
+            </p>
+            <div class="contact-grid" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" 
+            data-aos-duration="1500">
+                <div class="info-card">
+                    <h3>Contact info</h3>
+
+                    <div class="contact-item">
+                        <p>Email</p>
+                        <a href="#">madhugopal2710@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <p>phone</p>
+                        <a href="#">+91 8248339538</a>
+                    </div>
+                    <div class="contact-item">
+                        <p>Location</p>
+                        <a href="#">Chennai, India</a>
+                    </div>
+
+                    <div class="social-link">
+                        <p>Contact me with</p>
+                        <a href="#">Github</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-card-content">
+                        <h3>Send Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required class="form-control"></textarea>
+                            </div>
+
+                            <button type="submit" id="submitBtn" class="message-btn"><i class="bx bx-send-alt-2 bx-remove-padding"></i> SEND MESSAGE </button>
+
+                            <div class="success-message" id="successMessage">
+                                Message sent successfully! I'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>Made with ❤️ by Madhumitha</h3>
+        <div class="box-icons">
+            <a href="#"><i class="bx bxl-youtube"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+    </footer>
+
     
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.57/build/spline-viewer.js"></script>
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.57/build/spline-viewer.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+         AOS.init();
+    </script>
    
    
     <script src="app.js"></script>
