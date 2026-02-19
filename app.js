@@ -14,10 +14,10 @@ const video4 = document.getElementById('projectVideo4');
 const videoList = [video1, video2, video3, video4];
 
 videoList.forEach(function(video){
-    video.addEventListener('mouseover', function(){
+    video.addEventListener('mouseenter', function(){
         video.play();
     })
-    video.addEventListener('mouseout', function(){
+    video.addEventListener('mouseleave', function(){
         video.pause();
     })
 })

@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet"> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
+    <div id="three-bg"></div>
     <header>
         <div class="logo">
             MADHUMITHA
@@ -24,7 +25,7 @@
             <h1>SOFTWARE DEVELOPER</h1>
             <h2>SOF DEV</h2>
             <div class="location">
-                <p>BASED<br>In<br>INDIA</p>
+                <p>OPEN<br>TO<br>WORK</p>
             </div>
             
         </div>
@@ -32,7 +33,7 @@
      data-aos-duration="1500">
             
             <p class="bio">
-                <span style="color:rgb(231, 139, 158)">Computer Science Engineer </span>passionate about full-stack development, machine learning, and creating modern, user-focused web applications. Driven to build innovative technology solutions that solve real-world problems and continuously explore new tools and technologies.
+                <span style="color:rgb(124, 170, 255)">Computer Science Engineer </span>passionate about full-stack development, machine learning, and creating modern, user-focused web applications. Driven to build innovative technology solutions that solve real-world problems and continuously explore new tools and technologies.
             </p>
         </div>
 
@@ -120,10 +121,10 @@ I’m always exploring new tools, improving my skills, and challenging myself wi
             --quantity: 4;
         ">
         <div class="list">
-            <div class="item" style="--position:1"><video id="projectVideo1" loop playsinline src="assests/video/project-1.mp4"></video></div>
-            <div class="item" style="--position:2"><video id="projectVideo2" loop playsinline src="assests/video/project-2.mp4"></video></div>
-            <div class="item" style="--position:3"><video id="projectVideo3" loop playsinline src="assests/video/project-3.mp4"></video></div>
-            <div class="item" style="--position:4"><video id="projectVideo4" loop playsinline src="assests/video/project-4.mp4"></video></div>
+            <div class="item" style="--position:1"><video id="projectVideo1" muted loop playsinline src="assests/video/project-1.mp4"></video></div>
+            <div class="item" style="--position:2"><video id="projectVideo2" muted loop playsinline src="assests/video/project-2.mp4"></video></div>
+            <div class="item" style="--position:3"><video id="projectVideo3" muted loop playsinline src="assests/video/project-3.mp4"></video></div>
+            <div class="item" style="--position:4"><video id="projectVideo4" muted loop playsinline src="assests/video/project-4.mp4"></video></div>
         </div>
         </div>
     </section>
@@ -212,7 +213,8 @@ I’m always exploring new tools, improving my skills, and challenging myself wi
          AOS.init();
     </script>
    
-   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="background.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

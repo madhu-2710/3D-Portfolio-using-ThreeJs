@@ -1,10 +1,23 @@
-body{
+/* body{
     background: #56585c;
     background: linear-gradient(90deg, rgb(36, 37, 39) 0%, rgb(18, 19, 28) 50%, rgba(0, 9, 41, 1) 100%);
     color: white;
     padding: 3rem;
     position: relative;
+} */
+
+
+/* make body transparent so three.js is visible */
+body {
+    background: linear-gradient(
+        90deg,
+        rgb(36, 37, 39) 0%,
+        rgb(18, 19, 28) 50%,
+        rgba(0, 9, 41, 1) 100%
+    );
 }
+
+
 
 *{
     margin: 0;
@@ -27,6 +40,8 @@ header{
 }
 
 .contact-btn{
+    margin-top: 15px;
+    margin-right: 10px;
     padding: 0.5rem 2rem;
     font-size: 1rem;
     background-color: rgba(67, 70, 105, 1);
@@ -85,6 +100,7 @@ main h2{
     display:flex;
     flex-direction: column;
     align-items:flex-start;
+    margin-left: 50px;
 }
 
 .location p{
@@ -105,6 +121,8 @@ main h2{
     font-weight:300;
     letter-spacing:1px;
     max-width: 22rem;
+    margin-left: 50px;
+    color: rgba(255, 255, 255, 0.9);
 }
 .scroll-down{
     height: 5rem;
@@ -334,6 +352,7 @@ main h2{
     margin-top: 4rem;
     width: 100%;
     border-radius:1rem;
+    pointer-events: auto;
 }
 @keyframes autoRun{
     from {
@@ -568,7 +587,6 @@ footer{
     }
 
 
-
     .bento-grid {
         position: relative;
         display: grid;
@@ -691,6 +709,7 @@ footer{
     }
 
     footer h3 {
+        color: rgba(255, 255, 255, 0.9);
         font-size: 1rem;
     }
 }
@@ -727,6 +746,23 @@ footer{
         font-size: 0.8rem;
     }
 }
+
+#three-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+    pointer-events: none;
+}
+
+#three-bg canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 
 
